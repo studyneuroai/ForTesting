@@ -6,7 +6,7 @@
   <title>Кирилл и Елизавета — 03.07.2027</title>
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://googleapis.com/css2?family=Caveat:wght@600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-color: #f6f4f0;
@@ -31,7 +31,6 @@
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;
       padding: 20px 15px;
     }
 
@@ -39,7 +38,7 @@
       max-width: 480px;
       width: 100%;
       background: var(--card-bg);
-      padding: 44px 28px;
+      padding: 40px 24px;
       border-radius: 28px;
       box-shadow: 0 20px 50px rgba(35, 38, 34, 0.06);
       text-align: center;
@@ -59,28 +58,29 @@
       margin-bottom: 18px;
     }
 
+    /* Каллиграфический шрифт в стиле Welcome */
     h1 {
-      font-family: 'Caveat', cursive;
-      font-size: 54px;
-      font-weight: 700;
-      line-height: 1.05;
+      font-family: 'Great Vibes', cursive;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 1.15;
       color: var(--text-main);
       margin-bottom: 18px;
+      letter-spacing: 0.5px;
     }
 
     .intro {
       font-size: 15px;
       line-height: 1.65;
       color: var(--text-muted);
-      font-weight: 400;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .date-box {
       padding: 18px 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
 
     .date-main {
@@ -100,16 +100,16 @@
     .countdown {
       display: flex;
       justify-content: center;
-      gap: 10px;
-      margin-bottom: 30px;
+      gap: 8px;
+      margin-bottom: 34px;
     }
 
     .time-block {
       background: #f9f8f6;
       border: 1px solid var(--border);
       border-radius: 16px;
-      padding: 12px 8px;
-      min-width: 68px;
+      padding: 12px 6px;
+      flex: 1;
     }
 
     .time-num {
@@ -126,12 +126,67 @@
       display: block;
     }
 
+    /* Блок Наша история */
+    .story-section {
+      margin: 34px 0;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      font-weight: 400;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .section-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+    }
+
+    .story-item {
+      background: #f9f8f6;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 14px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .story-photo {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 14px;
+      display: block;
+      margin-bottom: 12px;
+      background-color: #e6e2da;
+    }
+
+    .story-date {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+
+    .story-caption {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-main);
+    }
+
     /* Место проведения */
     .location-box {
       background: #f9f8f6;
       border-radius: 20px;
       padding: 20px;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
+      border: 1px solid var(--border);
     }
 
     .location-title {
@@ -163,15 +218,10 @@
       font-weight: 500;
       color: var(--primary);
       text-decoration: none;
-      padding: 8px 16px;
+      padding: 9px 16px;
       border-radius: 12px;
       background: #ffffff;
       border: 1px solid var(--border);
-      transition: all 0.2s ease;
-    }
-
-    .map-link:hover {
-      border-color: var(--primary);
     }
 
     /* Главная кнопка */
@@ -185,16 +235,11 @@
       border-radius: 18px;
       font-size: 15px;
       font-weight: 500;
-      letter-spacing: 0.3px;
-      transition: background-color 0.2s ease, transform 0.1s ease;
+      transition: background-color 0.2s ease;
     }
 
     .btn-tg:hover {
       background-color: var(--primary-hover);
-    }
-
-    .btn-tg:active {
-      transform: scale(0.98);
     }
   </style>
 </head>
@@ -231,6 +276,30 @@
       </div>
     </div>
 
+    <!-- БЛОК НАША ИСТОРИЯ -->
+    <div class="story-section">
+      <div class="section-title">Наша история</div>
+      <div class="section-subtitle">Несколько моментов, с которых всё начиналось</div>
+
+      <div class="story-item">
+        <img src="photo1.jpg" alt="За полчаса до предложения" class="story-photo">
+        <div class="story-date">Лето 2026</div>
+        <div class="story-caption">Всё только начинается, начинается...</div>
+      </div>
+
+      <div class="story-item">
+        <img src="photo2.jpg" alt="Москва вдохновляет" class="story-photo">
+        <div class="story-date">Осень 2024</div>
+        <div class="story-caption">Наши долгие прогулки до самого рассвета, после которых мы поняли — это навсегда.</div>
+      </div>
+
+      <div class="story-item">
+        <img src="photo3.jpg" alt="Москоу невер слип..." class="story-photo">
+        <div class="story-date">2026 год</div>
+        <div class="story-caption">То самое «Да!», которое привело нас к этому прекрасному дню.</div>
+      </div>
+    </div>
+
     <div class="location-box">
       <div class="location-title">Место проведения</div>
       <div class="location-name">Ресторан «Велес»</div>
@@ -240,7 +309,7 @@
       </a>
     </div>
 
-    <a href="https://t.me/+l7spULP2Z0k5ZWNi" target="_blank" rel="noopener" class="btn-tg">
+    <a href="https://t.me" target="_blank" rel="noopener" class="btn-tg">
       Подтвердить присутствие в Telegram
     </a>
   </div>

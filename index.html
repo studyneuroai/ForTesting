@@ -82,7 +82,14 @@
     .rsvp-section { text-align: center; }
     .rsvp-note { font-size: 13px; color: var(--text-muted); line-height: 1.55; margin-bottom: 18px; }
     .btn-rsvp { display: block; width: 100%; background: linear-gradient(135deg, var(--sage), var(--sage-dark)); color: #fff; text-decoration: none; padding: 18px 24px; border-radius: 50px; font-size: 14px; font-weight: 500; box-shadow: 0 12px 24px rgba(86,100,82,0.25); }
-    .footer-sign { margin-top: 26px; font-family: 'Miama Nueva', 'Cormorant Garamond', cursive; font-size: 28px; color: var(--gold); text-align: center; }
+    .footer-sign {
+  margin-top: 26px;
+  font-family: 'Miama Nueva', 'Cormorant Garamond', cursive;
+  font-size: clamp(20px, 5.5vw, 26px);
+  white-space: nowrap;
+  color: var(--gold);
+  text-align: center;
+}
   </style>
 </head>
 
